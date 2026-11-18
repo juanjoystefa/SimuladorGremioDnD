@@ -14,7 +14,7 @@ import Vista.VistaGremio;
  * @author Usuario
  */
 
-public class main {
+public class Principal {
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
