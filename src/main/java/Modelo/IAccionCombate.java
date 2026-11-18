@@ -8,6 +8,8 @@ package Modelo;
  *
  * @author Usuario
  */
-public class IAccionCombate {
-    
+
+public interface IAccionCombate {
+    int DADO_BASE = 20;
+    String ejecutarAccionCombate();
 }
