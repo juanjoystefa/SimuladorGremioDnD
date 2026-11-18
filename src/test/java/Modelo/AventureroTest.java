@@ -80,8 +80,14 @@ public class AventureroTest {
         assertTrue(grupo.get(1).ejecutarAccionCombate().contains("Bola de Fuego"));
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void testNivelInvalidoLanzaExcepcion() {
-        new Monje("Invalido", 0, 20, 2);
+        boolean lanzoExcepcion = false;
+        try {
+            new Monje("Invalido", 0, 20, 2);
+        } catch (IllegalArgumentException e) {
+            lanzoExcepcion = true;
+        }
+        assertTrue(lanzoExcepcion);
     }
 }
